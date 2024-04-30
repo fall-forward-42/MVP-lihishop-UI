@@ -28,11 +28,14 @@ const Login = () => {
         e.preventDefault()
 
         try {
-            const userData = await login({ user, pwd }).unwrap()
-            dispatch(setCredentials({ ...userData, user }))
+            localStorage.removeItem("user")
+            localStorage.removeItem("token")
+            const userData = await login({ username:user, password:pwd }).unwrap()
+            //console.log(userData)
+            dispatch(setCredentials({ ...userData}))
             setUser('')
             setPwd('')
-            navigate('/welcome')
+            navigate('/products')
         } catch (err) {
             if (!err?.originalStatus) {
                 // isLoading: true until timeout occurs
@@ -56,7 +59,7 @@ const Login = () => {
         <section className="login">
             <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
 
-            <h1>Employee Login</h1>
+            <h1>Login</h1>
 
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>

@@ -16,8 +16,8 @@
 body {
   font: 1.5rem 'Nunito', sans-serif;;
   min-height: 100vh;
-  background-color: #0F172A;
-  color: #fff;
+  background-color: #d9dfec;
+  color: #000000;
 }
 
 input, button {
@@ -35,11 +35,11 @@ section {
 }
 
 a, a:visited {
-  color: whitesmoke;
+  color: rgb(56, 20, 20);
 }
 
 a:hover, a:focus {
-  color: rgba(245, 245, 245, 0.9);
+  color: rgba(45, 12, 12, 0.9);
 }
 
 /* || LOGIN */
