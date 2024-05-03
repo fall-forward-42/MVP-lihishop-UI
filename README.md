@@ -1,9 +1,6 @@
-# Midterm Java Technology project
-
-- Using ReactJs and Redux
-- Srping boot
-- JWT authentication (Spring security)
-
+# User Interface for Midterm Project of Java Technology - Le Hai Tien - 52101002
+## Technologies used:
+- ReactJs and ReduxToolkits
 **Get the request endpoints, HTTP Headers:**
 link: https://github.com/fall-forward-42/MVP-mini-shop.git
 
@@ -11,15 +8,14 @@ link: https://github.com/fall-forward-42/MVP-mini-shop.git
 
 Database(MySql) -> Entity -> Repository -> Service -> Controller -> DTO -> API endpoints
 
-### Config back-end
+### How to run
+1. Check connect to Backend Repo
 
-**Connect to database first**
-spring.application.name=[lihitiShop]
-spring.datasource.url=jdbc:mysql://[127.0.0.1:3306]/[database]
-spring.datasource.username=[root]
-spring.datasource.password=[yourpassword]
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
-spring.jpa.hibernate.ddl-auto=update
+2. Run script
+```
+npm run start
+```
+
 
 #### APIs
 
